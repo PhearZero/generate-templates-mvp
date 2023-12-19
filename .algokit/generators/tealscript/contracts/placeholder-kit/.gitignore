@@ -1,0 +1,13 @@
+# Ignore Generated files
+artifacts/*
+!artifacts/README.md
+!artifacts/.gitkeep
+client/*
+!client/README.md
+!client/.gitkeep
+
+# Ignore distrubution but keep the cjs package.json
+dist/*
+!dist/cjs
+dist/cjs/*
+!dist/cjs/package.json

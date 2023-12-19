@@ -1,7 +1,3 @@
-[generate.typescript]
-description = "Generates the base template for TypeScript"
-path = ".algokit/generators/typescript"
-
 [generate.tealscript]
 description = "Generates a TEALScript contract"
 path = ".algokit/generators/tealscript"

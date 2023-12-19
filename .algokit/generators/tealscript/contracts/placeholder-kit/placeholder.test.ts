@@ -1,6 +1,6 @@
 import { describe, test, expect, beforeAll, beforeEach } from '@jest/globals';
 import { algorandFixture } from '@algorandfoundation/algokit-utils/testing';
-import { PlaceHolderClient } from './clients/PlaceHolderClient';
+import { PlaceHolderClient } from './client/PlaceHolderClient';
 
 const fixture = algorandFixture();
 

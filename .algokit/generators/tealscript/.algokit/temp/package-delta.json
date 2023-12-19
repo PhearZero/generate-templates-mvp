@@ -1,10 +1,8 @@
 {
-    "devDependencies": {
-        "@algorandfoundation/algokit-client-generator": "^2.2.1",
-        "@algorandfoundation/tealscript": "^0.63.0"
-    },
-    "scripts": {
-        "compile-contracts": "tealscript contracts/*.algo.ts contracts/artifacts",
-        "generate-clients": "algokitgen generate -a contracts/artifacts/PlaceHolder.arc32.json -o contracts/clients/PlaceHolderClient.ts"
-    }
+  "scripts": {
+    "compile-kits": "npm run -ws compile-kit --if-present"
+  },
+   "workspaces": [
+       "contracts/*"
+   ]
 }

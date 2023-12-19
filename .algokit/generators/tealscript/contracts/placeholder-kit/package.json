@@ -1,0 +1,23 @@
+{
+  "name": "@companyname/placeholder-kit",
+  "type": "module",
+  "scripts": {
+    "compile-kit": "npm run compile-contract && npm run generate-client && tsc && tsc -p tsconfig.cjs.json",
+    "compile-contract": "tealscript placeholder.algo.ts artifacts",
+    "generate-client": "algokitgen generate -a artifacts/PlaceHolder.arc32.json -o client/PlaceHolderClient.ts"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/PlaceHolderclient.d.ts",
+      "import": "./dist/PlaceHolderClient.js",
+      "require": "./dist/cjs/PlaceHolderClient.cjs",
+      "default": "./dist/PlaceHolderClient.js"
+    },
+    "./arc4.json": "./artifacts/PlaceHolder.arc4.json",
+    "./arc32.json": "./artifacts/PlaceHolder.arc32.json"
+  },
+  "devDependencies": {
+    "@algorandfoundation/algokit-client-generator": "^2.2.1",
+    "@algorandfoundation/tealscript": "^0.63.0"
+  }
+}
