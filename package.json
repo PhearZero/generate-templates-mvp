@@ -1,5 +1,15 @@
 {
     "name": "@companyname/workspace",
     "private": true,
-    "workspaces": []
+    "workspaces": [
+        "contracts/*",
+        "sites/*",
+        "libs/*"
+    ],
+    "scripts": {
+        "compile-kits": "npm run -ws compile-kit --if-present",
+        "dev-sites": "npm run -ws dev-site --if-present",
+        "lint": "npm run -ws lint --if-present",
+        "typecheck": "npm run -ws typecheck --if-present"
+    }
 }

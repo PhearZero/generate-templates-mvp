@@ -13,7 +13,11 @@ Run all the generators and their associated npm scripts
 
 ```bash
 algokit generate tealscript &&\
-    algokit generate react && \
+    algokit generate react && 
+    algokit generate python && \
+    source .venv/bin/activate && \
+    python -m pip install -r pip-requirements.txt && \
+    pip install -r dev-requirements.txt && \
     cp ./sites/placeholder-site/.env.example ./sites/placeholder-site/.env && \
     npm install -w @companyname/placeholder-site @companyname/placeholder-kit --save && \
     npm run compile-kits && \

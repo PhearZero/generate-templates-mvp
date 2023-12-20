@@ -1,0 +1,9 @@
+{
+  "name": "@companyname/placeholder-py",
+  "private": true,
+  "scripts": {
+    "preinstall": "pip install -r requirements.txt",
+    "lint": "black --check .",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  }
+}

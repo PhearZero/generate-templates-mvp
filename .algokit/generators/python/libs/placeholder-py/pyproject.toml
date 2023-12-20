@@ -1,0 +1,16 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "companyname-placeholder"
+version = "0.0.1"
+description = "Companyname's placeholder library"
+authors = [ "Developer name <developer@email.com>", ]
+packages = [
+    { include = "companyname" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+numpy = "^1.2.3"

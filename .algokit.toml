@@ -5,3 +5,7 @@ path = ".algokit/generators/tealscript"
 [generate.react]
 description = "Generates a react frontend"
 path = ".algokit/generators/react"
+
+[generate.python]
+description = "Adds a python SDK to your project"
+path = ".algokit/generators/python"

@@ -1,0 +1,2 @@
+_tasks:
+   - "python -m venv .venv"
